@@ -13,6 +13,13 @@
         color: #333;
     }
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* 页面滚动 */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
 
 .container{
     min-height: 100vh;
@@ -43,7 +50,7 @@
 .login-form {
     flex: 1 1 40rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 40rem;
     background-color: white;
     padding: 40px;
     border-radius: 5px;
@@ -140,4 +147,9 @@ p {
         margin: 0;
     }
 
+}
+@media(min-width:560px){
+    .login-form{
+        max-height: 70vh;
+    }
 }
